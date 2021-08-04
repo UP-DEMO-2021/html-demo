@@ -1,7 +1,6 @@
 FROM debian
 WORKDIR /var/www/html
-COPY index.html ./
-#COPY . .
+COPY . .
 MAINTAINER oudam
 RUN apt-get update
 RUN apt-get install -y apache2 && apt-get clean
